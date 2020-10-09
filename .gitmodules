@@ -4,11 +4,11 @@
 	branch = master
 [submodule "amundsenfrontendlibrary"]
 	path = amundsenfrontendlibrary
-	url = https://github.com/amundsen-io/amundsenfrontendlibrary
+	url = https://github.com/eldritchabstraction/amundsenfrontendlibrary
 	branch = master
 [submodule "amundsenmetadatalibrary"]
 	path = amundsenmetadatalibrary
-	url = https://github.com/amundsen-io/amundsenmetadatalibrary
+	url = https://github.com/eldritchabstraction/amundsenmetadatalibrary
 	branch = master
 [submodule "amundsensearchlibrary"]
 	path = amundsensearchlibrary
