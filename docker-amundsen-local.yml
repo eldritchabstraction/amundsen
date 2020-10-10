@@ -1,7 +1,7 @@
 version: '3'
 services:
   neo4j:
-      image: neo4j:3.5.22
+      image: neo4j:4.0
       container_name: neo4j_amundsen
       environment:
         - NEO4J_AUTH=neo4j/test
@@ -15,6 +15,7 @@ services:
       volumes:
           - ./example/docker/neo4j/conf:/conf
           - ./.local/neo4j/data:/neo4j/data
+          - ./.local/neo4j/tmp:/tmp
       networks:
         - amundsennet
   elasticsearch:
@@ -30,6 +31,7 @@ services:
           hard: 65536
       volumes:
         - ./.local/elasticsearch/data:/usr/share/elasticsearch/data
+        - ./.local/elasticsearch/tmp:/tmp
   amundsensearch:
       build:
         context: ./amundsensearchlibrary
